@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de login vertical</title>
+</head>
+
+<body onload="onload()">
+    <div class="container">
+        <h1>Formulario de login Vertical</h1>
+        <div class="row">
+            <div class="col-sm-5 col-xs-12">
+
+                <div class="form-group">
+                    <lable for="subject">Email:</lable>
+                    <input type="text" id="subject" class="form-control" placeholder="Enter Email" required />
+                </div>
+                <div class="form-group">
+                    <lable for="event">Password</lable>
+                    <input type="text" id="event" class="form-control" placeholder="Enter Password" required />
+                </div>
+
+                <form name="formulario" method="post" action="/send.php">
+
+                    <input type="checkbox" name="empresa" checked />
+                    Rember me
+                </form>
+
+                <input type="submit" value="Submit">
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
